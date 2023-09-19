@@ -12,7 +12,6 @@ const List = () => {
             const { results } = await data.json();
             setCharacters(results);
             setLoading(false);
-        console.log(data)
         }
 
         fetchData();
@@ -22,6 +21,7 @@ const List = () => {
     return (
         <div>
         <h2>Characters</h2>
+            <div className='row'>
             {
                 loading
                     ? <div>Loading...</div>
@@ -36,6 +36,7 @@ const List = () => {
                             ))
                     )
             }
+            </div>
         </div>
     );
 }
