@@ -22,6 +22,7 @@ const List = () => {
     return (
         <div>
         <h2>Characters</h2>
+            <div className='row'>
             {
                 loading
                     ? <div>Loading...</div>
@@ -36,6 +37,7 @@ const List = () => {
                             ))
                     )
             }
+            </div>
         </div>
     );
 }
